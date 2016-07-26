@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS codeup_test_db;
+USE codeup_test_db;
+DROP DATABASE IF EXISTS albums;
+CREATE TABLE albums(
+	id INT UNSIGNED NOT NULL NULL AUTO_INCREMENT,
+	artist STRING,
+	release_date STRING,
+	sales FLOAT,
+	genre STRING,
+	PRIMARY KEY(id)
+);
